@@ -1,0 +1,19 @@
+</br>
+</br>
+<center>
+  <h2 style="color: blue">PROJECTS</h2>
+<div class= "col-md-12">
+  <% count = 0 %>
+  <% while count < @list.count %></br>
+  <div>
+    <p><%=link_to Github::MAP[count] , @list[count]['url']%></p>
+  </br>
+    <%=@list[count]['description']%>
+    <hr>
+  </div>
+  <% count += 1%>
+  <%end%>
+</div>
+<center>
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HeyArnold</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+        <div class="col-md-12">
+        <div class="header">
+          <h1>Arnold Sanders.</h1>
+        </div>
+        <div class="tagline">
+          <h2> Biology grad. 
+            Rails developer. </br>
+           Problem solver, with a scientific mind.
+           Curious of everything. Dreamer!</h2>
+        </div>
+        </div>
+        <hr>
+        <div class="container">
+        <center>
+        <ul>
+          <li><%= link_to 'LinkedIn', linkedin_index_path %></li>
+          <li><%= link_to 'GitHub', github_index_path %></li>
+          <li>Blog</li>
+        </ul> 
+      </center>
+
+
+<%= yield %>
+        </div>
+</body>
+</html>
